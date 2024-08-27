@@ -5,8 +5,8 @@
 <Entity tags="wand">
         
     <!-- 
-    <Base file="data/entities/base_wand_physics.xml">               -> The wand is subject to gravity (can be kicked)
-    <Base file="data/entities/base_item.xml"                        -> The wand is NOT subject to gravity (CANNOT be kicked)
+    <Base file="data/entities/base_wand_physics.xml">        -> The wand is subject to gravity (can be kicked)
+    <Base file="data/entities/base_item.xml"                 -> The wand is NOT subject to gravity (CANNOT be kicked)
      -->
     
     <!-- <Base file="data/entities/base_wand_physics.xml"> -->
@@ -15,11 +15,16 @@
             item_name="wand_template_1"
             remove_on_death="1"
             collect_nondefault_actions="1"
-            play_hover_animation="1" >
+            play_hover_animation="1"
+            play_spinning_animation="1"
+            play_pick_sound="1"
+            custom_pickup_string="$itempickup_open"
+            ui_sprite="mods/NoitaWandTemplate/files/wands/simple_wand_icon_gfx.xml" >
         </ItemComponent>
     </Base>
-    <!-- play_hover_animation="0" -> the wand turns around itself
-         play_hover_animation="1" -> the wand floats in the air
+    <!-- play_hover_animation       -> if 1, the item will play a hovering animation
+         play_spinning_animation    -> if 1, the item will play a spinning animation, if player_hover_animation is 0
+         play_pick_sound            -> if 1, plays a default sound when picked
      -->
 
     <!-- <Base file="data/entities/base_wand.xml"> </Base>  -->
@@ -59,7 +64,7 @@
 	<HotspotComponent 
         _tags="shoot_pos"
         offset.x="12"
-        offset.y="-0.5" >
+        offset.y="0" >
     </HotspotComponent>
 	
     <LuaComponent
@@ -74,7 +79,9 @@
         _tags="enabled_in_world,enabled_in_hand,enabled_in_inventory" >
     </ManaReloaderComponent>
 
-    <SpriteParticleEmitterComponent
+    <!-- MAGICAL EFFECT WHEN WAND SPAWN -->
+
+    <!-- <SpriteParticleEmitterComponent
 		sprite_file="data/particles/ray.xml" 
 		delay="0"
 		lifetime="1.5"
@@ -102,8 +109,82 @@
 		randomize_velocity.min_y="-30"
 		randomize_velocity.max_y="30"
 		velocity_always_away_from_center="1">
-	</SpriteParticleEmitterComponent>
-    
+	</SpriteParticleEmitterComponent> -->
+
+
+    <!-- SNOW EFFECT WHEN WAND IN HAND -->
+
+    <SpriteParticleEmitterComponent 
+      _enabled="0" 
+      _tags="enabled_in_hand,item_identified"
+      additive="0" 
+      angular_velocity="0" 
+      camera_bound="1" 
+      camera_distance="75" 
+      color.a="1" 
+      color.b="1" 
+      color.g="1" 
+      color.r="1" 
+      color_change.a="-0.5" 
+      color_change.b="0" 
+      color_change.g="0" 
+      color_change.r="0" 
+      count_max="1" 
+      count_min="1" 
+      delay="0" 
+      emission_interval_max_frames="20" 
+      emission_interval_min_frames="10" 
+      emissive="0" 
+      entity_file="" 
+      entity_velocity_multiplier="0" 
+      expand_randomize_position.x="0" 
+      expand_randomize_position.y="0" 
+      gravity.x="0" 
+      gravity.y="10" 
+      is_emitting="1" 
+      lifetime="10" 
+      randomize_alpha.max="0" 
+      randomize_alpha.min="0" 
+      randomize_angular_velocity.max="1" 
+      randomize_angular_velocity.min="-1" 
+      randomize_animation_speed_coeff.max="0" 
+      randomize_animation_speed_coeff.min="0" 
+      randomize_lifetime.max="0" 
+      randomize_lifetime.min="0" 
+      randomize_position.max_x="2" 
+      randomize_position.max_y="2" 
+      randomize_position.min_x="-2" 
+      randomize_position.min_y="-2" 
+      randomize_position_inside_hitbox="0" 
+      randomize_rotation.max="3.1415" 
+      randomize_rotation.min="-3.1415" 
+      randomize_scale.max_x="0" 
+      randomize_scale.max_y="0" 
+      randomize_scale.min_x="0" 
+      randomize_scale.min_y="0" 
+      randomize_velocity.max_x="2" 
+      randomize_velocity.max_y="2" 
+      randomize_velocity.min_x="-2" 
+      randomize_velocity.min_y="0" 
+      render_back="0" 
+      rotation="0" 
+      scale.x="1" 
+      scale.y="1" 
+      scale_velocity.x="0" 
+      scale_velocity.y="0" 
+      sprite_centered="0" 
+      sprite_file="data/particles/snowflake_$[1-2].xml" 
+      sprite_random_rotation="0" 
+      use_rotation_from_entity="0" 
+      use_rotation_from_velocity_component="0" 
+      use_velocity_as_rotation="0" 
+      velocity.x="0" 
+      velocity.y="0" 
+      velocity_always_away_from_center="0" 
+      velocity_slowdown="0.5" >
+
+    </SpriteParticleEmitterComponent>
+
 </Entity>
 
 <!-- 

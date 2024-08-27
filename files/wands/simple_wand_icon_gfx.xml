@@ -1,0 +1,20 @@
+
+<Sprite filename="mods/NoitaWandTemplate/files/wands/simple_wand_icon.png" >
+	
+  <!-- handgun -->
+  <RectAnimation 
+	name="inventory" 
+	pos_x="14"
+	pos_y="0" 
+	offset_x="3" 
+	offset_y="4" 
+	has_offset="1"
+	frame_count="1" 
+	frame_width="14" 
+	frame_height="8"  
+	frame_wait="0.1" 
+	frames_per_row="1" 
+	loop="0"   >
+   </RectAnimation>
+  
+</Sprite>
