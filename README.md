@@ -39,7 +39,7 @@
 </div>
 <br>
 
-### :mage_man: A tutorial and template for creating custom wands in Noita.
+### :mage_man: A [tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) and template for creating custom wands in Noita.
 
 ## Table of Contents
 
@@ -53,14 +53,15 @@
 
 ## About
 
-_NoitaWandTemplate_ is a project aimed at helping Noita modders create their own custom wands. It provides a basic template and tutorial that you can use as a starting point for your wand creation process.
+_NoitaWandTemplate_ is a project aimed at helping Noita modders create their own custom wands. It provides a basic template and [tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) that you can use as a starting point for your wand creation process.
 
 <p align="right"><a href="#readme-top">~~~~~ back to top ~~~~~</a></p>
 
 ### Features
 
 - Basic wand template ready for customization.
-- [Tutorial](/docs/TUTORIAL.md) on how to create and modify wands in Noita.
+- [Comprehensive tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) on how to create and modify wands in Noita.
+- Animated wand template available in the "animated_wand" branch.
 
 <p align="right"><a href="#readme-top">~~~~~ back to top ~~~~~</a></p>
 
@@ -80,15 +81,41 @@ _NoitaWandTemplate_ is a project aimed at helping Noita modders create their own
 
 ## Installation
 
-1. Clone this repository directly into your 'Noita/mods/' folder.
-(the 'steamapps/workshop/content/881100/' folder is not recommended as it is intended for mods downloaded from the Steam Workshop).
-2. You can edit the project's PNG, XML, and LUA files to customize wand values, graphics, and Lua script actions."
+### Cloning the project (code only)
+
+1. Clone this repository directly into your `Noita/mods/` folder:
+   ```
+   git clone https://github.com/Orel138/NoitaWandTemplate.git
+   ```
+
+   > [!NOTE]  
+   > the `steamapps/workshop/content/881100/` folder is not recommended as it is intended for mods downloaded from the Steam Workshop.
+
+2. If you want to work with the animated wand template, you can clone the `animated-wand` branch:
+   ```
+   git clone -b animated-wand https://github.com/Orel138/NoitaWandTemplate.git NoitaWandTemplate-Animated
+   ```
+
+   This will create a new folder named `NoitaWandTemplate-Animated` with the contents of the `animated-wand` branch.
+
+3. You can edit the project's PNG, XML, and LUA files to customize wand values, graphics, and Lua script actions."
+
+### Cloning the documentation (Wiki)
+
+If you want to have a local copy of the documentation:
+
+1. Clone the Wiki repository:
+   ```
+   git clone https://github.com/Orel138/NoitaWandTemplate.wiki.git
+   ```
+
+   This will give you a local copy of all the Wiki pages that you can browse offline.
 
 <p align="right"><a href="#readme-top">~~~~~ back to top ~~~~~</a></p>
 
 ## Usage
 
-1. Study [the tutorial](/docs/TUTORIAL.md) to understand the wand creation process.
+1. Study [the tutorial in our Wiki](https://github.com/Orel138/NoitaWandTemplate/wiki) to understand the wand creation process.
 2. Use the provided template as a base for your custom wand.
 3. Modify the scripts/graphics to achieve your desired wand behavior and appearance.
 
