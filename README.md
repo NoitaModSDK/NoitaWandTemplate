@@ -13,10 +13,10 @@
 
 <div align="center">
 
-[![stars - NoitaWandTemplate](https://img.shields.io/github/stars/Orel138/NoitaWandTemplate?style=social)](https://github.com/Orel138/NoitaWandTemplate)
-[![forks - NoitaWandTemplate](https://img.shields.io/github/forks/Orel138/NoitaWandTemplate?style=social)](https://github.com/Orel138/NoitaWandTemplate)
-[![license](https://custom-icon-badges.demolab.com/github/license/Orel138/NoitaWandTemplate?logo=law&logoColor=white)](https://github.com/Orel138/NoitaWandTemplate/blob/main/LICENSE "license MIT")
-[![issues](https://custom-icon-badges.demolab.com/github/issues-raw/Orel138/NoitaWandTemplate?logo=issue)](https://github.com/Orel138/NoitaWandTemplate/issues "issues")
+[![stars - NoitaWandTemplate](https://img.shields.io/github/stars/NoitaModSDK/NoitaWandTemplate?style=social)](https://github.com/NoitaModSDK/NoitaWandTemplate)
+[![forks - NoitaWandTemplate](https://img.shields.io/github/forks/NoitaModSDK/NoitaWandTemplate?style=social)](https://github.com/NoitaModSDK/NoitaWandTemplate)
+[![license](https://custom-icon-badges.demolab.com/github/license/NoitaModSDK/NoitaWandTemplate?logo=law&logoColor=white)](https://github.com/NoitaModSDK/NoitaWandTemplate/blob/main/LICENSE "license MIT")
+[![issues](https://custom-icon-badges.demolab.com/github/issues-raw/NoitaModSDK/NoitaWandTemplate?logo=issue)](https://github.com/NoitaModSDK/NoitaWandTemplate/issues "issues")
 
 </div>
 
@@ -34,12 +34,12 @@
 
 <div align="center">
   <sub>Built by
-  <a href="https://orel138.github.io">Orel138</a> and
-  <a href="https://github.com/orel138/NoitaWandTemplate/graphs/contributors">contributors </a>
+  <a href="https://NoitaModSDK.github.io">NoitaModSDK</a> and
+  <a href="https://github.com/NoitaModSDK/NoitaWandTemplate/graphs/contributors">contributors </a>
 </div>
 <br>
 
-### :mage_man: A [tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) and template for creating custom wands in Noita.
+### :mage_man: A [tutorial](https://github.com/NoitaModSDK/NoitaWandTemplate/wiki) and template for creating custom wands in Noita.
 
 ## Table of Contents
 
@@ -53,14 +53,14 @@
 
 ## About
 
-_NoitaWandTemplate_ is a project aimed at helping Noita modders create their own custom wands. It provides a basic template and [tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) that you can use as a starting point for your wand creation process.
+_NoitaWandTemplate_ is a project aimed at helping Noita modders create their own custom wands. It provides a basic template and [tutorial](https://github.com/NoitaModSDK/NoitaWandTemplate/wiki) that you can use as a starting point for your wand creation process.
 
 <p align="right"><a href="#readme-top">~~~~~ back to top ~~~~~</a></p>
 
 ### Features
 
 - Basic wand template ready for customization.
-- [Comprehensive tutorial](https://github.com/Orel138/NoitaWandTemplate/wiki) on how to create and modify wands in Noita.
+- [Comprehensive tutorial](https://github.com/NoitaModSDK/NoitaWandTemplate/wiki) on how to create and modify wands in Noita.
 - Animated wand template available in the "animated_wand" branch.
 
 <p align="right"><a href="#readme-top">~~~~~ back to top ~~~~~</a></p>
@@ -85,7 +85,7 @@ _NoitaWandTemplate_ is a project aimed at helping Noita modders create their own
 
 1. Clone this repository directly into your `Noita/mods/` folder:
    ```
-   git clone https://github.com/Orel138/NoitaWandTemplate.git
+   git clone https://github.com/NoitaModSDK/NoitaWandTemplate.git
    ```
 
    > [!NOTE]  
@@ -93,7 +93,7 @@ _NoitaWandTemplate_ is a project aimed at helping Noita modders create their own
 
 2. If you want to work with the animated wand template, you can clone the `animated-wand` branch:
    ```
-   git clone -b animated-wand https://github.com/Orel138/NoitaWandTemplate.git NoitaWandTemplate-Animated
+   git clone -b animated-wand https://github.com/NoitaModSDK/NoitaWandTemplate.git NoitaWandTemplate-Animated
    ```
 
    This will create a new folder named `NoitaWandTemplate-Animated` with the contents of the `animated-wand` branch.
@@ -106,7 +106,7 @@ If you want to have a local copy of the documentation:
 
 1. Clone the Wiki repository:
    ```
-   git clone https://github.com/Orel138/NoitaWandTemplate.wiki.git
+   git clone https://github.com/NoitaModSDK/NoitaWandTemplate.wiki.git
    ```
 
    This will give you a local copy of all the Wiki pages that you can browse offline.
@@ -115,7 +115,7 @@ If you want to have a local copy of the documentation:
 
 ## Usage
 
-1. Study [the tutorial in our Wiki](https://github.com/Orel138/NoitaWandTemplate/wiki) to understand the wand creation process.
+1. Study [the tutorial in our Wiki](https://github.com/NoitaModSDK/NoitaWandTemplate/wiki) to understand the wand creation process.
 2. Use the provided template as a base for your custom wand.
 3. Modify the scripts/graphics to achieve your desired wand behavior and appearance.
 
@@ -141,7 +141,7 @@ To contribute:
 
 ## License
 
-The tutorial text in this project is released under the [MIT license](/LICENSE) © [Orel138](https://github.com/Orel138).
+The tutorial text in this project is released under the [MIT license](/LICENSE) © [NoitaModSDK](https://github.com/NoitaModSDK).
 
 **Note:** The wand code itself is taken directly from the game files and is not covered under this license.
 All rights for the game code belong to the original creators of Noita.
